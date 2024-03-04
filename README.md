@@ -7,7 +7,8 @@ vue3-applet-template 基于 Vite4 + Vue3 + Pinia + uniapp 搭建的小程序项�
 #### 安装
 
 ```shell
-cd ./vue3-applet-template
-pnpm i
-pnpm serve
+$ npx degit wanrongjia/vue3-applet-template#main project-name
+$ cd ./project-name
+$ pnpm i
+$ pnpm serve
 ```

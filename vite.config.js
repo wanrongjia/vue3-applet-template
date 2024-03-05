@@ -1,6 +1,7 @@
 import { resolve } from 'path'
 import { defineConfig, loadEnv } from 'vite'
 import uni from '@dcloudio/vite-plugin-uni'
+import UniPages from '@uni-helper/vite-plugin-uni-pages'
 import ViteRestart from 'vite-plugin-restart'
 import AutoImport from 'unplugin-auto-import/vite'
 
@@ -9,6 +10,9 @@ const envBase = `${process.cwd()}\\env`
 export default ({ mode }) =>
 	defineConfig({
 		plugins: [
+			UniPages({
+				subPackages: []
+			}),
 			uni(),
 			AutoImport({
 				imports: ['vue', 'uni-app'],

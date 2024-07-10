@@ -12,20 +12,27 @@ const DEFAULT_CONFIG = {
 			? '/api'
 			: import.meta.env.VITE_APP_API_BASEURL,
 
+	APP_SOCKET_URL: import.meta.env.VITE_APP_SOCKET_URL,
+
 	// 请求APPID
 	APP_ID: import.meta.env.VITE_APP_APPID,
+
+	// 资源地址
+	ASSETS_URL: import.meta.env.VITE_APP_ASSETS_URL,
 
 	// 请求超时
 	TIMEOUT: 10000,
 
 	// TokenName
-	TOKEN_NAME: 'xx-token',
+	TOKEN_NAME: 'Authorization',
 
 	// Token前缀，注意最后有个空格，如不需要需设置空字符串
 	TOKEN_PREFIX: '',
 
 	// 追加其他头
-	HEADERS: {}
+	HEADERS: {
+		source: 'wx_applet'
+	}
 }
 
 export default DEFAULT_CONFIG

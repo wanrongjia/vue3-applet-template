@@ -4,17 +4,11 @@
 </template>
 
 <script setup>
-	import { pages } from 'virtual:uni-pages'
-	import { useSystem } from "@/stores/system";
-	import sysConfig from "@/config"
-	const system = useSystem()
-	const main = async () => {
-		console.log(pages)
-		// let href = `${location.href.split('#')[0]}`
-		// let url = `https://open.weixin.qq.com/connect/oauth2/authorize?appid=${sysConfig.APP_ID}&redirect_uri=${encodeURIComponent(href)}&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect`
-		// console.log(url)
-		// window.location.href = url
-	}
+import { useSystemStore } from "@/stores";
+const system = useSystemStore();
+const main = async () => {
+	system.increment();
+};
 </script>
 
 <style lang="scss" scoped></style>

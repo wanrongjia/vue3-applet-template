@@ -43,3 +43,4 @@ const navData = function ({ url, events, data }) {
 };
 
 export { saveData, getData, navData };
+export default { saveData, getData, navData }

@@ -1,42 +1,89 @@
 {
-  "easycom": {
-    "custom": {
-      "^u--(.*)": "uview-plus/components/u-$1/u-$1.vue",
-      "^up-(.*)": "uview-plus/components/u-$1/u-$1.vue",
-      "^u-([^-].*)": "uview-plus/components/u-$1/u-$1.vue"
-    }
-  },
-  "pages": [
-    {
-      "path": "pages/index/index",
-      "type": "home",
-      "style": {
-        "navigationStyle": "custom"
-      }
-    },
-    {
-      "path": "pages/home/index",
-      "type": "page",
-      "style": {
-        "navigationStyle": "custom",
-        "title": "首页"
-      }
-    },
-    {
-      "path": "pages/mine/index",
-      "type": "page",
-      "style": {
-        "navigationStyle": "custom",
-        "title": "我的",
-        "needToken": true
-      }
-    }
-  ],
-  "globalStyle": {
-    "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "好料星球",
-    "navigationBarBackgroundColor": "#0094FF",
-    "backgroundColor": "#F5F5F5"
-  },
-  "subPackages": []
+	"easycom": {
+		"custom": {
+			"^u--(.*)": "uview-plus/components/u-$1/u-$1.vue",
+			"^up-(.*)": "uview-plus/components/u-$1/u-$1.vue",
+			"^u-([^-].*)": "uview-plus/components/u-$1/u-$1.vue"
+		}
+	},
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/activity/index",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTitleText": "活动"
+			}
+		},
+		{
+			"path": "pages/shop/index",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTitleText": "商城"
+			}
+		},
+		{
+			"path": "pages/mine/index",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTitleText": "我的"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "立明堂",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#F5F5F5",
+		"navigationStyle": "custom"
+	},
+	"subPackages": [],
+	"tabBar": {
+		"custom": true,
+		"color": "#B5B5B5",
+		"selectedColor": "#FE1275",
+		"borderStyle": "white",
+		"backgroundColor": "#FFFFFF",
+		"iconWidth": "24px",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/home.png",
+				"selectedIconPath": "static/tabbar/activeHome.png",
+				"text": "首页",
+				"visible": false
+			},
+			{
+				"pagePath": "pages/activity/index",
+				"iconPath": "static/tabbar/activity.png",
+				"selectedIconPath": "static/tabbar/activeActivity.png",
+				"text": "活动",
+				"visible": false
+			},
+			{
+				"pagePath": "pages/shop/index",
+				"iconPath": "static/tabbar/shop.png",
+				"selectedIconPath": "static/tabbar/activeShop.png",
+				"text": "商城",
+				"visible": false
+			},
+			{
+				"pagePath": "pages/mine/index",
+				"iconPath": "static/tabbar/mine.png",
+				"selectedIconPath": "static/tabbar/activeMine.png",
+				"text": "我的",
+				"visible": false
+			}
+		]
+	}
 }

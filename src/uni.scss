@@ -13,9 +13,10 @@
  */
 
 /* 引入UViewPLUS全局样式 */
-@import 'uview-plus/theme.scss';
+@import "uview-plus/theme.scss";
 
 /* 颜色变量 */
+$li-color-primary: #b41732;
 
 /* 行为相关颜色 */
 $uni-color-primary: #007aff;
@@ -77,3 +78,61 @@ $uni-color-subtitle: #555; // 二级标题颜色
 $uni-font-size-subtitle: 18px;
 $uni-color-paragraph: #3f536e; // 文章段落颜色
 $uni-font-size-paragraph: 15px;
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.flex-1 {
+	display: flex;
+	align-items: center;
+}
+.flex-column {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+.between {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.warp {
+	display: flex;
+	flex-wrap: wrap;
+}
+.around {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.text-center {
+	text-align: center;
+}
+.red {
+	border: 2rpx solid red;
+}
+.overflow-1 {
+	display: -webkit-box;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1; //当属性值为2，表示超出2行隐藏
+}
+.overflow-2 {
+	display: -webkit-box;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2; //当属性值为2，表示超出2行隐藏
+}
+.position-flex {
+	left: 50%;
+	right: 50%;
+	transform: translate(-50%, -50%);
+}

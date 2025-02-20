@@ -1,5 +1,5 @@
 {
-	"name": "",
+	"name": "vue3-applet-template",
 	"appid": "",
 	"description": "",
 	"versionName": "1.0.0",
@@ -52,7 +52,7 @@
 			"base": "./",
 			"mode": "history"
 		},
-		"title": "好料星球"
+		"title": ""
 	},
 	/* 快应用特有相关 */
 	"quickapp": {},
